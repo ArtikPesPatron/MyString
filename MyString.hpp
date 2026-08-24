@@ -1,5 +1,7 @@
 #pragma once
 
+#include <cstddef>
+
 class MyString {
 public:
     MyString();
