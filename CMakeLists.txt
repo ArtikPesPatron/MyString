@@ -16,7 +16,7 @@ add_executable(Test_MyString
     MyString.cpp
 )
 
-target_include_directories(Test_MyString PRIVATE &{CMAKE_SOURCE_DIR})
+target_include_directories(Test_MyString PRIVATE ${CMAKE_SOURCE_DIR})
 target_compile_options(Test_MyString PRIVATE -Wall -Wextra -Wpedantic)
 
 enable_testing()

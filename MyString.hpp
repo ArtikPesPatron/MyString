@@ -1,5 +1,4 @@
 #pragma once
-#include <iostream>
 
 class MyString {
 public:
@@ -9,6 +8,9 @@ public:
 
     MyString(const MyString&) = delete;
     MyString& operator=(const MyString&) = delete;
+
+    MyString(MyString&& other) noexcept;
+    MyString& operator=(MyString&& other) noexcept;
 
     [[nodiscard]] size_t length() const;
     [[nodiscard]] const char* c_str() const;
